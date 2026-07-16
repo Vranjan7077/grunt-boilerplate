@@ -1,0 +1,19 @@
+.nav {
+  .flex-between();
+  padding-block: (@spacing-unit * 2);
+
+  &__links {
+    .flex-center();
+    gap: (@spacing-unit * 3);
+    list-style: none;
+  }
+
+  &__link {
+    color: var(--color-text);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}

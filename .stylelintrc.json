@@ -1,0 +1,17 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "plugins": ["stylelint-less"],
+  "customSyntax": "postcss-less",
+  "ignoreFiles": ["dist/**", ".tmp/**", "node_modules/**"],
+  "rules": {
+    "declaration-property-value-no-unknown": null,
+    "less/declaration-property-value-no-unknown": true,
+    "import-notation": null,
+    "media-query-no-invalid": null,
+    "declaration-empty-line-before": null,
+    "rule-empty-line-before": null,
+    "no-descending-specificity": null,
+    "selector-class-pattern": null,
+    "custom-property-pattern": null
+  }
+}

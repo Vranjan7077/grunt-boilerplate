@@ -1,0 +1,11 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: (@spacing-unit * 2);
+}
+
+each(range(1, 12), {
+  .grid-col-@{value} {
+    grid-column: span @value;
+  }
+});

@@ -1,0 +1,27 @@
+// Usage:
+//   .card {
+//     padding: @spacing-unit * 2;
+//     .respond-to(md, { padding: @spacing-unit * 3; });
+//   }
+.respond-to(@breakpoint; @rules) {
+  & when (@breakpoint = sm) {
+    @media (min-width: @breakpoint-sm) {
+      @rules();
+    }
+  }
+  & when (@breakpoint = md) {
+    @media (min-width: @breakpoint-md) {
+      @rules();
+    }
+  }
+  & when (@breakpoint = lg) {
+    @media (min-width: @breakpoint-lg) {
+      @rules();
+    }
+  }
+  & when (@breakpoint = xl) {
+    @media (min-width: @breakpoint-xl) {
+      @rules();
+    }
+  }
+}

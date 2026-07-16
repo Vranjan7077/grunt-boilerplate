@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    @@include('../partials/head.html', {"title": "Home"})
+  </head>
+  <body>
+    @@include('../partials/header.html')
+
+    <main class="container mt-6">
+      <h1>Grunt + LESS Boilerplate</h1>
+      <p class="text-muted">A from-scratch, production-ready build system for static sites.</p>
+
+      <div class="grid mt-6">
+        <div class="grid-col-6">
+          <div class="card">
+            <h2 class="card__title">Fast by default</h2>
+            <p class="card__body">
+              esbuild and browser-sync keep rebuilds and reloads near-instant.
+            </p>
+          </div>
+        </div>
+        <div class="grid-col-6">
+          <div class="card">
+            <h2 class="card__title">LESS-first</h2>
+            <p class="card__body">
+              A scalable settings/functions/mixins/base/layout/components/utilities/themes
+              architecture.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6">
+        <a class="btn btn--primary mr-2" href="/patterns.html">View patterns</a>
+        <a class="btn btn--outline" href="https://gruntjs.com">Grunt docs</a>
+      </div>
+    </main>
+
+    @@include('../partials/footer.html')
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

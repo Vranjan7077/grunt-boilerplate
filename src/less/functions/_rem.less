@@ -1,0 +1,8 @@
+// LESS has no first-class return-value functions like Sass. The convention
+// used here is a mixin that assigns its result to a predictable variable
+// name, called immediately before the property that needs it:
+//
+//   .rem(24px); font-size: @rem;
+.rem(@px) {
+  @rem: (@px / @font-size-base) * 1rem;
+}

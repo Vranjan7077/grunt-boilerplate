@@ -1,0 +1,60 @@
+{
+  "name": "grunt-boilerplate",
+  "version": "0.1.0",
+  "description": "An original, production-ready Grunt + LESS boilerplate for static sites, marketing pages, docs sites, and pattern libraries.",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vranjan7077/grunt-boilerplate.git"
+  },
+  "homepage": "https://github.com/Vranjan7077/grunt-boilerplate#readme",
+  "bugs": {
+    "url": "https://github.com/Vranjan7077/grunt-boilerplate/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "grunt dev",
+    "build": "grunt build",
+    "lint": "grunt lint",
+    "lint:js": "grunt eslint",
+    "lint:css": "grunt stylelint",
+    "lint:html": "grunt htmlvalidate",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "grunt test",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "autoprefixer": "^10.5.2",
+    "browser-sync": "^3.0.4",
+    "cssnano": "^8.0.2",
+    "esbuild": "^0.28.1",
+    "eslint": "^10.7.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import-x": "^4.17.1",
+    "fast-glob": "^3.3.3",
+    "globals": "^17.7.0",
+    "grunt": "^1.6.2",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-htmlmin": "^3.1.0",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-include-replace": "^5.0.0",
+    "html-validate": "^11.5.6",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.8",
+    "postcss": "^8.5.19",
+    "postcss-less": "^6.0.0",
+    "prettier": "^3.9.5",
+    "sharp": "^0.35.3",
+    "stylelint": "^17.14.0",
+    "stylelint-config-standard": "^40.0.0",
+    "stylelint-less": "^4.2.1",
+    "svgo": "^4.0.2"
+  }
+}

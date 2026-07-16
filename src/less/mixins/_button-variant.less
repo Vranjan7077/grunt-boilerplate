@@ -1,0 +1,18 @@
+// Generates background/border/text/hover/active states for a button color
+// variant from a single base color. Text color defaults to LESS's built-in
+// contrast() function, which picks light or dark automatically.
+.button-variant(@background; @text: contrast(@background)) {
+  background-color: @background;
+  border-color: @background;
+  color: @text;
+
+  &:hover {
+    background-color: darken(@background, 8%);
+    border-color: darken(@background, 8%);
+  }
+
+  &:active {
+    background-color: darken(@background, 14%);
+    border-color: darken(@background, 14%);
+  }
+}

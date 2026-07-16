@@ -1,0 +1,18 @@
+# Normalize line endings to LF for every text file, regardless of the
+# checking-out machine's core.autocrlf setting. Without this, Windows CI
+# runners (which default core.autocrlf=true) check files out as CRLF,
+# and Prettier — which defaults to endOfLine: "lf" — flags every file as
+# a formatting violation even though nothing actually changed.
+* text=auto eol=lf
+
+# Binaries: never touch line endings.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary

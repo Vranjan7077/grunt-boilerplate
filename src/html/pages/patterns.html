@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    @@include('../partials/head.html', {"title": "Patterns"})
+  </head>
+  <body>
+    @@include('../partials/header.html')
+
+    <main class="container mt-6">
+      <h1>Patterns</h1>
+      <p class="text-muted">
+        Every component in src/less/components, rendered against real markup.
+      </p>
+
+      <section class="mt-6">
+        <h2>Buttons</h2>
+        <div class="d-flex">
+          <button class="btn btn--primary mr-2" type="button">Primary</button>
+          <button class="btn btn--secondary mr-2" type="button">Secondary</button>
+          <button class="btn btn--outline mr-2" type="button">Outline</button>
+          <button class="btn btn--primary" type="button" disabled>Disabled</button>
+        </div>
+      </section>
+
+      <section class="mt-8">
+        <h2>Cards</h2>
+        <div class="grid mt-4">
+          <div class="grid-col-4">
+            <div class="card">
+              <h3 class="card__title">Card title</h3>
+              <p class="card__body">Supporting copy for this card.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-8">
+        <h2>Form field</h2>
+        <div class="field">
+          <label class="field__label" for="email">Email</label>
+          <input class="field__input" id="email" type="email" placeholder="you@example.com" />
+        </div>
+      </section>
+    </main>
+
+    @@include('../partials/footer.html')
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

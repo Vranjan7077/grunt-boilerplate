@@ -1,0 +1,39 @@
+// Generates .m-*, .mt-*, .p-*, etc. from the shared spacing scale in
+// settings/_spacing.less — one loop instead of dozens of hand-written,
+// near-duplicate rules.
+each(@spacing-scale, {
+  @step: @value;
+  @size: (@step * @spacing-unit);
+
+  .m-@{step} {
+    margin: @size;
+  }
+  .mt-@{step} {
+    margin-top: @size;
+  }
+  .mr-@{step} {
+    margin-right: @size;
+  }
+  .mb-@{step} {
+    margin-bottom: @size;
+  }
+  .ml-@{step} {
+    margin-left: @size;
+  }
+
+  .p-@{step} {
+    padding: @size;
+  }
+  .pt-@{step} {
+    padding-top: @size;
+  }
+  .pr-@{step} {
+    padding-right: @size;
+  }
+  .pb-@{step} {
+    padding-bottom: @size;
+  }
+  .pl-@{step} {
+    padding-left: @size;
+  }
+});
